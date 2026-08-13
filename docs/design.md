@@ -7,3 +7,5 @@ Desktop cards use an asymmetric twelve-column grid, with Cookbook and Sideline S
 Real product screenshots are preferred. When a project has no checked-in screenshot, the strongest available public project visual is used and should be replaced when a representative screenshot becomes available.
 
 Project metadata and titles appear before each screenshot so the name establishes context before the visual. README-first captures are used for command-line projects, while native app projects favor full product screenshots.
+
+The design is implemented entirely with semantic HTML and CSS. It does not depend on client-side rendering or JavaScript behavior.

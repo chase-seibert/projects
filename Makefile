@@ -1,22 +1,19 @@
-.PHONY: setup run build preview lint test clean
+.PHONY: setup run preview build lint test
+
+PORT ?= 8000
 
 setup:
-	npm install
+	python3 --version
 
 run:
-	npm run dev
+	python3 -m http.server $(PORT) --bind 127.0.0.1 --directory site
 
-build:
-	npm run build
+preview: run
 
-preview:
-	npm run preview
+build: test
 
 lint:
-	npm run lint
+	python3 scripts/validate_site.py
 
 test:
-	npm test
-
-clean:
-	rm -rf dist
+	python3 scripts/validate_site.py

@@ -1,7 +1,7 @@
 # Architecture
 
-Built by Chase is a static React site compiled by Vite. Project metadata is a typed array in `src/main.tsx`; the page maps that data into accessible project cards. Styles are kept in one responsive stylesheet, while image assets are served unchanged from `public/apps/`.
+Built by Chase is a dependency-free static website. The complete page and project cards live in `site/index.html`, styles live in `site/styles.css`, and image assets live in `site/apps/`.
 
-There is no server, database, authentication, or runtime API. `npm run build` emits the complete site to `dist/`. GitHub Actions uploads that directory as a Pages artifact and deploys it.
+There is no JavaScript, package manager, compilation, server application, database, authentication, or runtime API. A small standard-library Python check verifies the HTML structure and local asset references.
 
-Vite derives its production base path from `GITHUB_REPOSITORY`, so the same source works at the repository-scoped GitHub Pages URL and at `/` during local development.
+GitHub Actions uploads the finished `site/` directory directly to Pages. Relative asset paths allow the same files to work at the repository-scoped GitHub Pages URL and in the local preview.

@@ -7,3 +7,4 @@
 - Added local preview, validation, and automatic GitHub Pages deployment.
 - Moved project titles above their screenshots and refreshed the Cookbook, Sideline Save, Chase Sidekick, Clipboard Markup, ICS Combine, and RSS Combine visuals.
 - Compressed the hero so visitors reach the project gallery sooner.
+- Replaced the React/Vite implementation with dependency-free static HTML and CSS published directly to GitHub Pages.
