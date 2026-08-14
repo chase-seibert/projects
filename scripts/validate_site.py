@@ -42,7 +42,7 @@ def main() -> None:
     parser.feed(index.read_text(encoding="utf-8"))
 
     assert parser.scripts == 0, "The static page must not include JavaScript"
-    assert parser.project_cards == 11, f"Expected 11 project cards, found {parser.project_cards}"
+    assert parser.project_cards == 12, f"Expected 12 project cards, found {parser.project_cards}"
 
     page_text = " ".join(parser.text)
     for project in (

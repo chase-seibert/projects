@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-14
+
+- Added Markdown Preview, a native macOS Markdown viewer with Finder and Quick Look integration.
+
 ## 2026-08-13
 
 - Created the initial Built by Chase portfolio.
