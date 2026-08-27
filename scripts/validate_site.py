@@ -42,7 +42,7 @@ def main() -> None:
     parser.feed(index.read_text(encoding="utf-8"))
 
     assert parser.scripts == 0, "The static page must not include JavaScript"
-    assert parser.project_cards == 12, f"Expected 12 project cards, found {parser.project_cards}"
+    assert parser.project_cards == 14, f"Expected 14 project cards, found {parser.project_cards}"
 
     page_text = " ".join(parser.text)
     for project in (
@@ -57,6 +57,9 @@ def main() -> None:
         "ICS Combine",
         "CronTab Manager",
         "RSS Combine",
+        "StrengthLog",
+        "Markdown Preview",
+        "NameDrop",
     ):
         assert project in page_text, f"Missing project: {project}"
 

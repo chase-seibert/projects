@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-27
+
+- Added StrengthLog and NameDrop to the project gallery with screenshots and GitHub links.
+
 ## 2026-08-14
 
 - Added Markdown Preview, a native macOS Markdown viewer with Finder and Quick Look integration.
